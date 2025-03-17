@@ -48,29 +48,49 @@ public class Main {
         }
     }
 
-    public static void chamarApiRest(String apiUrl) {
+    /**
+     * Faz uma requisição HTTP GET para a URL fornecida e imprime a resposta no console.
+     *
+     * @param urlString A URL para a qual a requisição GET será feita.
+     */
+    public static void chamarApiRest(String urlString) {
         try {
-            URL url = new URL(apiUrl);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
+            // Cria um objeto URL a partir da string fornecida
+            URL url = new URL(urlString);
+            
+            // Abre uma conexão HTTP com a URL
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            
+            // Define o método HTTP como GET
+            connection.setRequestMethod("GET");
 
-            int responseCode = conn.getResponseCode();
+            // Obtém o código de resposta da requisição
+            int responseCode = connection.getResponseCode();
+            
+            // Verifica se a resposta foi bem-sucedida (código 200)
             if (responseCode == HttpURLConnection.HTTP_OK) {
-                BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                // Cria um BufferedReader para ler a resposta da API
+                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
                 String inputLine;
-                StringBuffer response = new StringBuffer();
+                StringBuilder content = new StringBuilder();
 
+                // Lê cada linha da resposta e adiciona ao StringBuilder
                 while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
+                    content.append(inputLine);
                 }
-                in.close();
 
-                System.out.println("Resposta da API: " + response.toString());
+                // Fecha o BufferedReader
+                in.close();
+                
+                // Imprime a resposta da API no console
+                System.out.println("Response: " + content.toString());
             } else {
-                System.out.println("Erro na chamada da API: " + responseCode);
+                // Imprime uma mensagem de erro se a requisição falhar
+                System.out.println("GET request failed. Response Code: " + responseCode);
             }
         } catch (IOException e) {
-            System.err.println("Erro ao chamar a API: " + e.getMessage());
+            // Captura e imprime qualquer exceção de I/O que ocorra durante o processo
+            e.printStackTrace();
         }
     }
 }

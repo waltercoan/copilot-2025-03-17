@@ -27,4 +27,6 @@ por favor gere um método que receba uma URL de uma API REST, e faça uma chamad
 @workspace /explain por favor explique o método chamarAPIRest
 
 @workspace /explain por favor gere a documentação no código para o método chamarApiRest
+
+@workspace /explain por favor gere a documentação no código linha a linha para o método chamarApiRest, sem modificar o código fonte
 ```
