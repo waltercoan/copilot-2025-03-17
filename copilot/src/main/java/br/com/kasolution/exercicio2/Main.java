@@ -2,6 +2,10 @@ package br.com.kasolution.exercicio2;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +17,7 @@ public class Main {
         };
 
         gerarCsv("dados.csv", header, data);
+        chamarApiRest("https://api.exemplo.com/dados");
     }
 
     public static void gerarCsv(String fileName, String[] header, String[][] data) {
@@ -40,6 +45,32 @@ public class Main {
             System.out.println("Arquivo CSV gerado com sucesso!");
         } catch (IOException e) {
             System.err.println("Erro ao gerar o arquivo CSV: " + e.getMessage());
+        }
+    }
+
+    public static void chamarApiRest(String apiUrl) {
+        try {
+            URL url = new URL(apiUrl);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+
+            int responseCode = conn.getResponseCode();
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                String inputLine;
+                StringBuffer response = new StringBuffer();
+
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+
+                System.out.println("Resposta da API: " + response.toString());
+            } else {
+                System.out.println("Erro na chamada da API: " + responseCode);
+            }
+        } catch (IOException e) {
+            System.err.println("Erro ao chamar a API: " + e.getMessage());
         }
     }
 }
