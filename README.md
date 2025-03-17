@@ -29,4 +29,6 @@ por favor gere um método que receba uma URL de uma API REST, e faça uma chamad
 @workspace /explain por favor gere a documentação no código para o método chamarApiRest
 
 @workspace /explain por favor gere a documentação no código linha a linha para o método chamarApiRest, sem modificar o código fonte
+
+@workspace por favor, gere um novo método no #file:Main.java que receba um número inteiro e retorne o texto se ele é par ou impar
 ```

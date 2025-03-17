@@ -18,6 +18,10 @@ public class Main {
 
         gerarCsv("dados.csv", header, data);
         chamarApiRest("https://api.exemplo.com/dados");
+
+        // Testando o novo método
+        int numero = 5;
+        System.out.println(numero + " é " + verificarParOuImpar(numero));
     }
 
     public static void gerarCsv(String fileName, String[] header, String[][] data) {
@@ -91,6 +95,20 @@ public class Main {
         } catch (IOException e) {
             // Captura e imprime qualquer exceção de I/O que ocorra durante o processo
             e.printStackTrace();
+        }
+    }
+
+    /**
+     * Verifica se um número é par ou ímpar.
+     *
+     * @param numero O número a ser verificado.
+     * @return Uma string indicando se o número é "par" ou "ímpar".
+     */
+    public static String verificarParOuImpar(int numero) {
+        if (numero % 2 == 0) {
+            return "par";
+        } else {
+            return "ímpar";
         }
     }
 }
