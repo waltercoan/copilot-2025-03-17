@@ -1,3 +1,5 @@
+package br.com.kasolution.exercicio1;
+
 public class Main {
     // defina um método main para esta classe
     public static void main(String[] args) {
@@ -5,6 +7,12 @@ public class Main {
         double[] numeros = {1.0, 2.0, 3.0, 4.0, 5.0};
         double media = calcularMedia(numeros);
         System.out.println("A média é: " + media);
+
+        //código para chamar o método calcularMediaStream
+        double mediaStream = calcularMediaStream(numeros);
+        System.out.println("A média utilizando stream é: " + mediaStream);
+
+
     }
 
     // defina um método para calcular a média de uma lista de números

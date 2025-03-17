@@ -17,3 +17,8 @@
 [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
 [Atalhos Github Copilot](https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment?tool=jetbrains)
+
+## Exercicio 2
+```bash
+@workspace por favor, defina uma função para gerar um arquivo .csv com alguns dados
+```
