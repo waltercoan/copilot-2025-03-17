@@ -25,4 +25,6 @@
 por favor gere um método que receba uma URL de uma API REST, e faça uma chamada HTTP e em seguida imprima o retorno em formato de texto
 
 @workspace /explain por favor explique o método chamarAPIRest
+
+@workspace /explain por favor gere a documentação no código para o método chamarApiRest
 ```
