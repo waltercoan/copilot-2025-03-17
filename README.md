@@ -16,3 +16,4 @@
 
 [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
+[Atalhos Github Copilot](https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment?tool=jetbrains)
