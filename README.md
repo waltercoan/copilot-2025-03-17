@@ -36,3 +36,10 @@ por favor gere um método que receba uma URL de uma API REST, e faça uma chamad
 
 @workspace por favor gere um teste de unidade para o método verificarParOuImpar na pasta de test do projeto seguindo o mesmo pacote.
 ```
+
+## Exercício 3
+```bash
+definir um método para criar validação para email. O método deve ser chamado validarEmail e deve receber um parâmetro do tipo String com o email a ser validado. O método deve retornar um boolean indicando se o email é válido ou não. O método main deve chamar o método validarEmail e passar o email. Ao começar a digitar a função ‘validarEmail’, o Copilot pode sugerir o uso de expressões regulares para 
+validação. 
+```
+
