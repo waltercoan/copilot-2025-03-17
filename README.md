@@ -23,4 +23,6 @@
 @workspace por favor, defina uma função para gerar um arquivo .csv com alguns dados
 
 por favor gere um método que receba uma URL de uma API REST, e faça uma chamada HTTP e em seguida imprima o retorno em formato de texto
+
+@workspace /explain por favor explique o método chamarAPIRest
 ```
