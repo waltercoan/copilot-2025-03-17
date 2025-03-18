@@ -54,3 +54,11 @@ definir um método para gerenciar a conexão com um banco de dados SQL Server. O
 @workspace considerando o método conectarBanco gere uma versão do código em c#
 ```
 
+## Exercício 5 SQL
+- Tabela Usuário possui os campos: nome, telefone, endereco, numero
+- Tabela Publicacao possui os campos: texto, usuario associado, data e numero de likes
+- Tabela Comentario possui os campos: publicacao associada, texto data
+
+```bash
+@workspace #sym:## Exercício 5 SQL  por favor gere o códiog na linguagem SQL para o banco de dados SQL Server
+```
