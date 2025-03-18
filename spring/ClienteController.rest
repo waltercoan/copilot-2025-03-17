@@ -1,0 +1,37 @@
+
+### Criar um novo cliente
+POST http://localhost:8080/clientes
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "endereco": "Rua das Flores, 123",
+  "telefone": "123456789",
+  "email": "joao.silva@example.com",
+  "estado": {
+    "id": 1
+  }
+}
+
+### Listar todos os clientes
+GET http://localhost:8080/clientes
+
+### Obter um cliente pelo ID
+GET http://localhost:8080/clientes/2
+
+### Atualizar um cliente existente
+PUT http://localhost:8080/clientes/2
+Content-Type: application/json
+
+{
+  "nome": "João Silva Atualizado",
+  "endereco": "Rua das Flores, 456",
+  "telefone": "987654321",
+  "email": "joao.silva.atualizado@example.com",
+  "estado": {
+    "id": 1
+  }
+}
+
+### Excluir um cliente pelo ID
+DELETE http://localhost:8080/clientes/2

@@ -289,4 +289,11 @@ por favor gere as classes em java no pacote br.com.kasolution.spring.entities pa
 
 ```bash
 considerando a #sym:Cliente #sym:Estado gere um arquivo no formato plantuml representando as classes e duas associações
+
+
+@workspace gere um método de consulta no ClienteRepository pelo campo de email
+
+@workspace gere o codigo da classe controller para realizar um CRUD da entidade Cliente
+
+@workspace gere um arquivo no padrão do rest client para invocar os endpoints da api rest
 ```
