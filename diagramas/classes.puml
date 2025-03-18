@@ -1,0 +1,48 @@
+@startuml
+package br.com.kasolution.spring.entities {
+    class Cliente {
+        - Long id
+        - String nome
+        - String endereco
+        - String telefone
+        - String email
+        - Estado estado
+        --
+        + Cliente(String nome, String endereco, String telefone, String email, Estado estado)
+        + Cliente()
+        --
+        + Long getId()
+        + void setId(Long id)
+        + String getNome()
+        + void setNome(String nome)
+        + String getEndereco()
+        + void setEndereco(String endereco)
+        + String getTelefone()
+        + void setTelefone(String telefone)
+        + String getEmail()
+        + void setEmail(String email)
+        + Estado getEstado()
+        + void setEstado(Estado estado)
+        + String toString()
+    }
+
+    class Estado {
+        - Long id
+        - String nome
+        - String pais
+        --
+        + Estado(String nome, String pais)
+        + Estado()
+        --
+        + Long getId()
+        + void setId(Long id)
+        + String getNome()
+        + void setNome(String nome)
+        + String getPais()
+        + void setPais(String pais)
+        + String toString()
+    }
+
+    Cliente "1" --> "1" Estado : estado_id
+}
+@enduml

@@ -260,3 +260,33 @@ Swing. Swing refere-se ao kit de ferramentas do widget da GUI para criar aplicat
 
 @workspace gere o código necessário para movimentar a Snake no jogo
 ```
+
+## Exemplo Spring Boot
+[Spring Boot extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)
+
+
+```bash
+@workspace por favor gere as configurações necessárias no arquivo application.properties para conectar no banco de dados H2
+```
+
+## Historias de usuario
+- Como um atendente eu gostaria de registrar os dados de um cliente como: nome, endereco, telefone, e-mail, estado
+- Como um atendente eu gostaria de buscar um cliente pelo nome
+- Como um atendente eu gostaria de alterar os dados de um cliente
+- Como um atendente eu gostaria de excluir um cliente pelo nome
+- Como um atendente eu gostaria de registrar os estados com os dados: nome, e pais
+
+
+```bash
+@workspace #sym:## Historias de usuario quais são as entidades?
+
+por favor gere as classes em java no pacote br.com.kasolution.spring.entities para representar as entidades
+
+@workspace por favor altere as entidades para que possam ser persistidas no banco de dados
+```
+
+[PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+
+```bash
+considerando a #sym:Cliente #sym:Estado gere um arquivo no formato plantuml representando as classes e duas associações
+```
