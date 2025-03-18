@@ -50,5 +50,7 @@ definir um método para criar uma validação para CPF. O método deve ser chama
 ## Exercício 5
 ```bash
 definir um método para gerenciar a conexão com um banco de dados SQL Server. O método deve ser chamado conectarBanco e deve receber um parâmetro do tipo String com a URL de conexão. O método deve retornar um objeto do tipo Connection. O método main deve chamar o método conectarBanco e passar a URL de conexão "jdbc:sqlserver://localhost:1433;databaseName=exemplo" como parâmetro.
+
+@workspace considerando o método conectarBanco gere uma versão do código em c#
 ```
 
